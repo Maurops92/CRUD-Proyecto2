@@ -38,8 +38,10 @@ $btnOffCanvasCont.addEventListener('click', function () {
     updateOffcanvasContent(usersNotAccep);
 
     const offcanvasElement = document.getElementById("offcanvasRight");
-    const offcanvas = new bootstrap.Offcanvas(offcanvasElement);
-    offcanvas.show();
+    offcanvasElement.addEventListener('hidden.bs.offcanvas', function () {
+        const body = document.querySelector('body');
+        body.classList.remove('offcanvas-open');
+    });
 });
 
 window.confirmUser = (id) => {
