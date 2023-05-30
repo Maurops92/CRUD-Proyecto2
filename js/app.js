@@ -25,8 +25,8 @@ const productUpdate = (event) => {
     let index = datos.findIndex((item) => item.id == idProductUpdate);
     datos[index].name = document.querySelector("#nameModal").value;
     datos[index].type = document.querySelector("#typeModal").value;
-    datos[index].discPer = document.querySelector("#discPerModal").value;
-    datos[index].price = document.querySelector("#priceModal").value;
+    datos[index].discPer = parseInt(document.querySelector("#discPerModal").value);
+    datos[index].price = parseInt(document.querySelector("#priceModal").value);
     datos[index].stock =parseInt(document.querySelector("#stockModal").value);
     cargarTabla();
     savedJSON();
