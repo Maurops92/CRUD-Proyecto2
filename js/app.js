@@ -1,5 +1,6 @@
 //import datos from "../Franco/Pagina Arma tu PC/Datos/dataProducts.json" assert { type: "json"};
-import { Cards } from "/Curso de programacion/Backup proyecto 2/Proyecto2Grupo2/Mauro/js/ClassJSCard"
+
+import { Cards } from "./ClassJSCard.js"
 
 let datos=[];
 
